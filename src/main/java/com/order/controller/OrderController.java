@@ -14,7 +14,7 @@ public class OrderController {
     @Autowired
     private orderServiceImpl orderService;
 
-    @GetMapping("/summary")
+    @GetMapping("/summary-report")
     public order getOrderSummary() {
         return orderService.getCount();
     }
